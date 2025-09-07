@@ -1,57 +1,87 @@
-# 🛍️ Vastravali Store Data Analysis Dashboard
+# 📊 Vastravali Store Data Analysis – Excel Dashboard Project
 
-This project presents a detailed **data analysis and visualization dashboard** for **Vastravali Store**, created using **SQL for data extraction and Power BI for visualization**. The dashboard offers business insights into customer behavior, sales performance, and product trends to drive data-backed decisions.
-
----
-
-## 📊 Tools & Technologies
-
-- **Microsoft Power BI** – Interactive dashboard creation
-- **SQL** – Data cleaning, transformation, and querying
-- **Excel** – Initial data storage and formatting
+## 📝 Project Overview
+This project analyzes **Vastravali Store's annual sales data** using Microsoft Excel to uncover sales patterns, customer demographics, and top-performing products/channels.  
+It includes **data cleaning, processing, visualization, and an interactive dashboard** for quick business insights.
 
 ---
 
-## 📁 Dataset
-
-- File Name: `Vastravali Store Data Analysis.xlsx`
-- Data includes:
-  - Customer Information
-  - Orders and Sales Data
-  - Product Categories
-  - Store-wise Transactions
-
----
-
-## 💡 Key Features
-
-- **Sales Overview**: Total revenue, order count, average order value
-- **Top Performing Products**: Ranked by sales and quantity sold
-- **Store Performance**: Comparison of revenue and order volume across different store locations
-- **Time-based Analysis**: Monthly/quarterly trends to identify peak business periods
-- **Customer Insights**: Frequency, recency, and monetary value (RFM segmentation)
+## 📂 Dataset
+- **File Name:** Vastravali Store Data Analysis.xlsx
+- **Columns:**
+  - Order ID
+  - Order Date
+  - Status
+  - Customer Name
+  - Gender
+  - State
+  - Category
+  - Quantity
+  - Amount
+  - Payment Method
+  - Age Group *(calculated)*
+  - Month Name *(calculated)*
 
 ---
 
-## 📌 Objectives
+## ⚙️ Steps Followed
 
-- Understand the buying patterns and customer preferences
-- Identify high-performing categories and stores
-- Recognize opportunities to boost underperforming areas
-- Provide actionable insights for strategic planning
+### 1️⃣ Data Cleaning
+- Removed duplicates & missing values.
+- Standardized categorical data (state names, gender, categories).
+- Converted date fields into Excel date format.
+
+### 2️⃣ Data Processing
+- Added new calculated fields:
+  - **Month Name** – Extracted from order date for trend analysis.
+  - **Age Group** – Segmented into `<20`, `20–29`, `30–49`, `50+`.
+- Filtered out canceled orders.
+
+### 3️⃣ Data Analysis
+- **Sales Trend:** Monthly revenue trends.
+- **Customer Demographics:** Gender & age group distribution.
+- **Regional Performance:** Top states by sales.
+- **Channel Analysis:** Sales contribution by Amazon, Flipkart, Myntra, etc.
+- **Product Insights:** Category preferences by gender.
+
+### 4️⃣ Dashboard Creation
+- Built an **interactive Excel dashboard** using:
+  - Pivot Tables
+  - Pivot Charts
+  - Slicers for Month, Gender, State, Channel
+- Visualizations used: Column charts, Pie charts, Line charts, Bar charts.
 
 ---
 
+## 📈 Key Insights
+- **👩 Female customers** contribute more to sales than male customers.
+- **30–49 years** age group has the highest spending.
+- **Top 3 States:** Maharashtra, Karnataka, Uttar Pradesh.
+- **Top Channels:** Amazon, Flipkart, Myntra.
+- **Peak Months:** March, May, October.
 
-## 📬 Contact
+---
 
-For feedback or collaboration:  
-**Aditi Nayan**  
-*B.Tech Chemical Engineering | BIT Mesra*  
-📧 [nayanaditi85@gmail.com] 
- 
+## 🎯 Recommendations
+1. Focus marketing campaigns on **women aged 30–49**.
+2. Target **Maharashtra, Karnataka, and Uttar Pradesh** with state-specific offers.
+3. Run festive & seasonal promotions in **March, May, and October**.
+4. Strengthen partnerships with **Amazon, Flipkart, and Myntra**.
 
--
+---
 
-This project is for educational and analytical purposes. You are free to reference or modify it with credit.
+## 🛠 Tools Used
+- **Microsoft Excel**
+  - Data Cleaning
+  - Pivot Tables & Pivot Charts
+  - Slicers
+  - Conditional Formatting
+  - Interactive Dashboard
 
+---
+
+## 📌 Project Deliverables
+- Cleaned dataset
+- Processed sales analysis
+- Interactive Excel dashboard
+- Actionable business insights
